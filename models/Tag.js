@@ -15,10 +15,11 @@ Tag.init(
     },
     tag_name:{
     type: DataTypes.STRING,
-    },
+  
   },
-
-    {
+},
+{
+  // define model options
     sequelize,
     timestamps: false,
     freezeTableName: true,

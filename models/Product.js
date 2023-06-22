@@ -49,6 +49,7 @@ Product.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'product',
+
   }
 );
 
