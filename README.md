@@ -7,7 +7,7 @@ To run this application, the user must have VSCode, node, sequelize and insomnia
 To use this applicaiton the user must first run npm i. Then the user must open an integrated terminal in the schema.sql file and input mysql -u root. Then the user must input source schema.sql;. Then the user must ensure they are3 out of the db folder, and then open a new integrated terminal and enter node seeds/index.js. Then the user must enter node server.js. Now the user must open insomina with localhost:3001/api to run the routes and methods created in the application.
 
 See video below:
-![alt text](https://drive.google.com/file/d/1mjCvSjxW1dt2qrzafSw9d11UKOcyWkVj/view)
+[! Video](https://drive.google.com/file/d/1mjCvSjxW1dt2qrzafSw9d11UKOcyWkVj/view)
 
 # Credits
 To build this applicaiton, I utilized starter code provided to me by The University of Utah Coding Bootcamp and code from in class activities. Additionally, I received ideas from https://youtube.com and https://w3schools.com. As well I recevied help building this application from University of Utah Coding Bootcamp teacher Jonathan Bejarano. 
