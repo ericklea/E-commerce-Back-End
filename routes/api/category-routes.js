@@ -9,10 +9,10 @@ router.get('/', async (req, res) => {
     const categoryAll = await Category.findAll({
       include: [{ model: Product }],
     });
-    res.status(200).json(categoryAll);
+    res.status(200).json(categoryAll)
   }
   catch (err){
-    res.status(500).json(err);
+    res.status(500).json(err)
   }
 });
 
@@ -24,10 +24,10 @@ router.get('/:id', async (req, res) => {
     });
 
     if (!categoryData){
-      res.status(404).json({ message: 'No category found with this id!' });
+      res.status(404).json({ message: 'No category found with this id!' })
       return;
     }
-    res.status(200).json(categoryData);
+    res.status(200).json(categoryData)
   }
   catch (err){
     res.status(500).json(err);
@@ -37,10 +37,10 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   try{
     const categoryCreate = await Category.create(req.body);
-    res.status(200).json(categoryCreate);
+    res.status(200).json(categoryCreate)
   }
   catch (err){
-    res.status(400).json(err);
+    res.status(400).json(err)
   }
 });
 
@@ -53,13 +53,13 @@ router.put('/:id', async (req, res) => {
       },
     });
     if (!categoryUpdate[0]){
-      res.status(404).json({ message: 'No category found with this id!' });
+      res.status(404).json({ message: 'No category found with this id!' })
       return;
     }
-    res.status(200).json(categoryUpdate);
+    res.status(200).json(categoryUpdate)
   }
   catch (err){
-    res.status(500).json(err);
+    res.status(500).json(err)
   }
 });
 
@@ -72,13 +72,13 @@ router.delete('/:id', async (req, res) => {
       },
     });
     if (!categoryDelete){
-    res.status(404).json({ message: 'No category found with this id!' });
+    res.status(404).json({ message: 'No category found with this id!' })
     return;
     }
-    res.status(200).json(categoryDelete);
+    res.status(200).json(categoryDelete)
   }
   catch (err){
-    res.status(500).json(err);
+    res.status(500).json(err)
   }
 });
 
